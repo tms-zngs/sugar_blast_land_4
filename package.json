@@ -1,11 +1,11 @@
 {
-  "name": "evpl_vite_template",
+  "name": "sugar_blast_land_4",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/evpl_vite_template/",
+    "build": "vite build --base=/sugar_blast_land_4/",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
