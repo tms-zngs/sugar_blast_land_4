@@ -10,5 +10,16 @@
 @import url('./container.css');
 
 /* Sections style */
-/* @import url('./header.css'); */
-/* @import url('./footer.css'); */
+@import url('./header.css');
+@import url('./hero.css');
+@import url('about-game.css');
+@import url('./how-to-play.css');
+@import url('candy-combos.css');
+@import url('./special-boosters.css');
+@import url('./sweet-features.css');
+@import url('./visual-sound.css');
+@import url('./levels-challeges.css');
+@import url('./mobile-experience.css');
+@import url('./download-now.css');
+@import url('./contact-support.css');
+@import url('./footer.css');

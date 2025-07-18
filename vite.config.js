@@ -39,7 +39,9 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     plugins: [
-      injectHTML(),
+      injectHTML({
+        root: './src',
+      }),
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',
@@ -47,7 +49,7 @@ export default defineConfig(({ command }) => {
       ViteImageOptimizer({
         exclude: /^sprite.svg$/,
         png: {
-          quality: 60,
+          quality: 90,
         },
         jpeg: {
           quality: 60,
