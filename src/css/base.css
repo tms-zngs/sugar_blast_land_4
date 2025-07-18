@@ -6,7 +6,8 @@
   --weight-regular: 400;
   --weight-medium: 500;
 
-  --color-light: #fafafa;
+  --pink-main-bg: #ffc2df;
+  --pink-section-bg: #ffe5f6;
   --color-dark: #1f1f1f;
 
   font-size: 16px;
@@ -29,7 +30,7 @@ body {
   flex-direction: column;
   max-width: 100%;
   color: var(--color-dark);
-  background-color: var(--color-light);
+  background-color: var(--pink-main-bg);
   margin: 0;
 }
 
