@@ -9,6 +9,7 @@
   --pink-main-bg: #ffc2df;
   --pink-section-bg: #ffe5f6;
   --color-dark: #1f1f1f;
+  --color-pink-additional: #ca349a;
 
   font-size: 16px;
   line-height: 1.5;
@@ -23,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 56px;
 }
 
 body {

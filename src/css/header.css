@@ -1,0 +1,131 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20000;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.header-burger-button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-btn {
+  stroke: var(--color-dark);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-btn.menu:hover,
+.header-btn.menu:focus {
+  stroke: var(--color-pink-additional);
+}
+
+.close-x {
+  display: none;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 56px);
+  z-index: 100;
+  background-color: var(--pink-section-bg);
+  opacity: 0;
+  pointer-events: none;
+  overflow-y: auto;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 16px 24px;
+}
+
+.burger-menu[data-visible='open'] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.burger-menu.hidden {
+  display: none;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.nav-link {
+  font-family: var(--font-roboto-medium);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-dark);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-pink-additional);
+}
+
+.header-desctop {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-header-flower,
+  .header-burger-button {
+    display: none;
+  }
+
+  .header-container {
+    padding: 24px 0 24px 0;
+  }
+
+  .header-desctop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .desctop-nav {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .desctop-header-flower {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: -3px;
+    left: 70px;
+  }
+  .desctop-nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin: 0 auto;
+  }
+}
