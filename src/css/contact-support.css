@@ -1,0 +1,90 @@
+.contact-support {
+    background: var(--pink-section-bg);
+    padding: 16px 0px;
+    margin-top: 16px;
+}
+
+.contact-support-title {
+    font-family: var(--font-agbalumo);
+    font-weight: var(--weight-regular);
+    font-size: 28px;
+    color: var(--dark);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.contact-support-text{
+    font-family: var(--font-roboto-regular);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark);
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.contact-support-link {
+    font-family: var(--font-roboto-regular);
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--dark);
+       
+}
+
+.contact-support-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.contact-support-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-support-social-list {
+    display: flex;
+    gap: 16px;
+}
+
+.contact-support-social-text {
+    font-family: var(--font-roboto-regular);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark);
+    display: flex;
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-support {
+    padding: 48px 0px;            
+}
+
+.contact-support-title {
+    margin-bottom: 12px;   
+}
+
+.contact-social-container {
+    display: flex;
+    flex-direction: row;
+    gap: 410px;
+}
+
+.contact-support-text {
+    width: 400px;
+    font-size: 18px;
+}
+
+.contact-support-link{
+    font-size: 18px;
+}
+
+}
