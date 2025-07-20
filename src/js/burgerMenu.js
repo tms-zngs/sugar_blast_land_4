@@ -1,45 +1,34 @@
 const toggleBtn = document.querySelector('[data-action="toggle"]');
-const burgerMenu = document.querySelector('.burger-menu');
+const modalOverlay = document.querySelector('[data-overlay]');
 const openIcon = document.querySelector('[data-icon="open"]');
 const closeIcon = document.querySelector('[data-icon="close"]');
 
 toggleBtn.addEventListener('click', () => {
-  const isOpen = burgerMenu.dataset.visible === 'open';
+  const isActive = modalOverlay.classList.contains('active');
 
-  if (isOpen) {
-    burgerMenu.dataset.visible = 'close';
-    openIcon.style.display = 'block';
-    closeIcon.style.display = 'none';
+  if (isActive) {
+    modalOverlay.classList.remove('active');
+    openIcon.classList.remove('hidden');
+    closeIcon.classList.remove('visible');
     document.body.classList.remove('no-scroll');
-
-    setTimeout(() => {
-      burgerMenu.classList.add('hidden');
-    }, 300);
   } else {
-    burgerMenu.classList.remove('hidden');
-    setTimeout(() => {
-      burgerMenu.dataset.visible = 'open';
-    }, 10);
-    openIcon.style.display = 'none';
-    closeIcon.style.display = 'block';
+    modalOverlay.classList.add('active');
+    openIcon.classList.add('hidden');
+    closeIcon.classList.add('visible');
     document.body.classList.add('no-scroll');
   }
 });
 
-document.querySelectorAll('.mobile-nav-item a').forEach(link => {
+document.querySelectorAll('[data-link]').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
 
-    const targetId = link.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-
-    burgerMenu.dataset.visible = 'close';
-    openIcon.style.display = 'block';
-    closeIcon.style.display = 'none';
+    modalOverlay.classList.remove('active');
+    openIcon.classList.remove('hidden');
+    closeIcon.classList.remove('visible');
     document.body.classList.remove('no-scroll');
 
-    setTimeout(() => {
-      burgerMenu.classList.add('hidden');
-    }, 300);
+    const targetId = link.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
   });
 });
