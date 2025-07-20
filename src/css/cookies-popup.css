@@ -1,0 +1,53 @@
+.cookies-policy-banner {
+    background: var(--pink-main-bg);
+    padding: 24px 0;
+}
+
+.cookies-policy-title {
+    font-family: var(--font-agbalumo);
+    font-weight: var(--weight-regular);
+    font-size: 28px;
+    color: var(--dark);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+
+/* Кнопки */
+.cookies-policy-actions {
+    display: inline-flex;
+    gap: 16px;
+}
+
+/* Загальні стилі для кнопок */
+.btn {
+    font-family: var(--font-roboto-medium);
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+/* Основна кнопка */
+.btn-primary {
+    background: #d81b60;
+    /* яскравіший рожевий */
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #c2185b;
+}
+
+/* Контурна кнопка */
+.btn-outline {
+    background: transparent;
+    color: #d81b60;
+    border: 2px solid #d81b60;
+}
+
+.btn-outline:hover {
+    background: #f8bbd0;
+}

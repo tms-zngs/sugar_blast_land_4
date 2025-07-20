@@ -1,0 +1,132 @@
+.container {
+    box-sizing: border-box;
+}
+
+/* Власний контейнер сторінки */
+.privacy-policy {
+    padding: 58px 0px 48px;
+    background-color: var(--pink-section-bg);
+}
+
+/* Блок кнопка + текст go to home */
+.icons-arrow-container {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+}
+
+.icons-arrow {
+    stroke: var(--color-dark);
+}
+
+.back-link {
+    display: flex;
+    margin-bottom: 32px;
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    font-size: 16px;
+    text-align: left;
+    color: var(--color-dark);
+}
+
+/* Заголовок сторінки */
+.main-title {
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    font-size: 28px;
+    text-align: left;
+    color: var(--color-dark);
+    margin-bottom: 24px;
+}
+
+.title-privacy-policy {
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    text-align: left;
+    font-size: 18px;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+}
+
+/* Дата оновлення */
+.last-updated {
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-medium);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-dark);
+    text-align: left;
+}
+
+.text-privacy-policy {
+    display: block;
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    text-align: left;
+    font-size: 18px;
+    color: var(--color-dark);
+}
+
+.list-privacy-policy {
+    margin-bottom: 24px;
+    padding-inline-start: 16px;
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    text-align: left;
+    font-size: 18px;
+    color: var(--color-dark);
+}
+
+.point-list {
+    margin-bottom: 24px;
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    text-align: left;
+    font-size: 18px;
+    color: var(--color-dark);
+}
+
+.point-item {
+    list-style: disc outside;
+    text-align: left;
+
+}
+
+.list-item-privacy-policy {
+    margin-bottom: 24px;
+}
+
+.link-police-privacy {
+    text-decoration: underline;
+}
+
+
+/* Адаптив для великих дисплеїв */
+@media (min-width: 1200px) {
+    .privacy-policy {
+        padding: 100px 72px 48px;
+    }
+
+    .last-updated {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .back-link {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .main-title {
+        font-family: var(--font-agbalumo);
+        font-weight: var(--weight-regular);
+        font-size: 40px;
+        text-align: left;
+        color: var(--color-dark);
+        margin-bottom: 28px;
+    }
+
+        
+}
