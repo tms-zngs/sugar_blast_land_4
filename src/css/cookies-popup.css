@@ -12,10 +12,25 @@
     text-align: center;
 }
 
+.cookies-policy-banner-title-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.cookies-policy-text{
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+}
 
 /* Кнопки */
 .cookies-policy-actions {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -26,28 +41,76 @@
     padding: 12px 24px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: 0.2s;
 }
 
 /* Основна кнопка */
 .btn-primary {
-    background: #d81b60;
-    /* яскравіший рожевий */
+    font-family: var(--font-agbalumo);
+    font-weight: var(--weight-regular);
+    font-size: 20px;
+    background: #CA349A;
     color: white;
     border: none;
 }
 
-.btn-primary:hover {
-    background: #c2185b;
+.btn-primary:active {
+    background: #FFE5F6;
+    color: var(--dark);
 }
 
 /* Контурна кнопка */
 .btn-outline {
+    font-family: var(--font-agbalumo);
+    font-weight: var(--weight-regular);
+    font-size: 20px;
     background: transparent;
-    color: #d81b60;
-    border: 2px solid #d81b60;
+    color: var(--dark);
+    border: 2px solid #CA349A;
+}
+
+.btn-outline:active {
+    border: 2px solid #FFE5F6;
+}
+
+@media only screen and (min-width: 1200px) {
+
+.btn-primary:hover {
+    box-shadow: 0 0 10px 0 #CA349A;
+    background: #CA349A;
+    color: white;
+}
+
+.btn-primary:active {
+    background: #FFE5F6;
+    color: var(--color-dark);
 }
 
 .btn-outline:hover {
-    background: #f8bbd0;
+    border: 2px solid #CA349A;
+    box-shadow: 0 0 10px 0 #CA349A;
+}
+
+.btn-outline:active {
+    border: 2px solid #FFE5F6
+}
+
+.cookies-policy-title {
+    font-size: 40px;
+    margin-bottom: 24px;  
+}
+
+.cookies-policy-text {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.cookies-policy-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
 }
