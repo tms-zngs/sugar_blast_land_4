@@ -1,0 +1,43 @@
+.about-game-section {
+  background-color: var(--pink-section-bg);
+}
+.container {
+}
+.about-game-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.about-game-title-wrap {
+  margin-bottom: 16px;
+}
+.about-game-title {
+  font-family: var(--font-agbalumo);
+  color: var(--color-dark);
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.about-game-text {
+  font-family: var(--font-roboto-regular);
+  font-weight: var(--weight-regular);
+  font-size: 16px;
+  text-align: left;
+  color: var(--color-dark);
+  line-height: 1.17;
+}
+.about-game-images-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.about-game-image {
+}
+.game-info-list {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.game-info-item {
+}
