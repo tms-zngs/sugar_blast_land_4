@@ -34,7 +34,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/sugar_blast_land_4/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/sugar_blast_land_4/assets/styles-RuU6YxxE.css">
+    <link rel="stylesheet" crossorigin href="/sugar_blast_land_4/assets/styles-D9coljMu.css">
   </head>
   <body>
     <header class="header">
@@ -356,20 +356,27 @@
   </div>
 </footer>
 
-    <section class="cookies-policy-banner">
-  <div class="container">
-    <h2 class="cookies-policy-title">
-      Cookies Policy <span class="cookie-emoji">🍪</span>
-    </h2>
+    <div data-cookies-modal class="cookies-modal">
+  <div class="cookies-modal__overlay"></div>
+  <div class="cookies-modal__content">
+    <div class="cookies-policy-banner-title-container">
+      <h2 class="cookies-policy-title">Cookies Policy</h2>
+      <div class="cookie-vodal-img">
+        <img src="/sugar_blast_land_4/img_svg/cookies.png" alt="cookie" width="48" height="58" /></div>
+    </div>
     <p class="cookies-policy-text">
       We use cookies to improve your experience on our website. By browsing
       this website, you agree to our use of cookies.
     </p>
     <div class="cookies-policy-actions">
-      <button class="btn btn-primary" id="accept-cookies">ACCEPT COOKIES</button>
-      <button class="btn btn-outline" id="decline-cookies">DECLINE COOKIES</button>
+      <button data-dismiss="accept" class="btn btn-primary">
+        ACCEPT COOKIES
+      </button>
+      <button data-dismiss="decline" class="btn btn-outline">
+        DECLINE COOKIES
+      </button>
     </div>
   </div>
-</section>
+</div>
   </body>
 </html>
