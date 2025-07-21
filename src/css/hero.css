@@ -130,6 +130,10 @@
   line-height: 1.17;
 }
 
+.mobile-line {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
   .hero-container {
     padding-top: 48px;
@@ -205,6 +209,9 @@
     margin-bottom: 16px;
   }
 
+  .mobile-line {
+    display: block;
+  }
   .line-hero {
     height: 38px;
   }
