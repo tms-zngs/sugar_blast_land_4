@@ -82,6 +82,7 @@
   flex-direction: column;
   gap: 16px;
   margin-bottom: 16px;
+  line-height: 1.17;
 }
 
 .mobile-experience-item-text {
@@ -92,6 +93,7 @@
   font-size: 16px;
   color: var(--dark);
   align-items: center;
+  line-height: 1.17;
 }
 
 .mobile-experience-image-text {
@@ -103,6 +105,7 @@
   font-weight: var(--weight-regular);
   font-size: 16px;
   color: var(--dark);
+  line-height: 1.17;
 }
 @media only screen and (min-width: 1200px) {
   .mobile-experience {

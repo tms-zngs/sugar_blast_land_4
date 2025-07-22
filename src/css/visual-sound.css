@@ -20,6 +20,7 @@
     font-size: 20px;
     margin-bottom: 8px;
     color: var(--dark);
+    line-height: 1.17;
 }
 .visual-sound-text {
     font-family: var(--font-roboto-regular);
@@ -27,6 +28,7 @@
     font-size: 16px;
     color: var(--dark);
     text-align: start;
+    line-height: 1.17;
 }
 .visual-sound-list {
     display: flex;
