@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.contact-support-text{
+.contact-support-text {
     font-family: var(--font-roboto-regular);
     font-weight: 400;
     font-size: 16px;
@@ -24,10 +24,10 @@
 
 .contact-support-link {
     font-family: var(--font-roboto-regular);
-        font-weight: 400;
-        font-size: 16px;
-        color: var(--dark);
-       
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark);
+
 }
 
 .contact-support-item {
@@ -36,6 +36,7 @@
     gap: 8px;
     margin-bottom: 16px;
 }
+
 .contact-support-list {
     display: flex;
     flex-direction: column;
@@ -65,26 +66,27 @@
 
 @media only screen and (min-width: 1200px) {
     .contact-support {
-    padding: 48px 0px;            
-}
+        padding: 48px 0px;
+    }
 
-.contact-support-title {
-    margin-bottom: 12px;   
-}
+    .contact-support-title {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
 
-.contact-social-container {
-    display: flex;
-    flex-direction: row;
-    gap: 410px;
-}
+    .contact-social-container {
+        display: flex;
+        flex-direction: row;
+        gap: 410px;
+    }
 
-.contact-support-text {
-    width: 400px;
-    font-size: 18px;
-}
+    .contact-support-text {
+        width: 400px;
+        font-size: 18px;
+    }
 
-.contact-support-link{
-    font-size: 18px;
-}
-
+    .contact-support-link {
+        font-size: 18px;
+    }
+    
 }
