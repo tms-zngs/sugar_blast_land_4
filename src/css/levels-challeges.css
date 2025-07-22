@@ -1,0 +1,122 @@
+.levels-challenges {
+    background: var(--pink-section-bg);
+    margin-bottom: 16px;
+}
+
+.levels-challenges-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.levels-challenges-title {
+    font-family: var(--font-agbalumo);
+    font-weight: var(--weight-regular);
+    font-size: 28px;
+    color: var(--dark);
+    margin-bottom: 16px;
+    text-align: start;
+    color: var(--dark);
+}
+
+.levels-challenges-subtitle {
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: var(--dark);
+}
+
+.levels-challenges-item {
+    display: flex;
+    gap: 8px;
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    font-size: 16px;
+    color: var(--dark);
+    align-items: center;
+    padding: 8px;
+}
+
+.levels-challenges-image-text {
+    display: block;
+}
+
+.levels-challenges-list-1,
+.levels-challenges-list-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.levels-challenges-image {
+    width: 288px;
+    margin-bottom: 23px;
+}
+
+.levels-challenges-text {
+    font-family: var(--font-roboto-regular);
+    font-weight: var(--weight-regular);
+    font-size: 16px;
+    color: var(--dark);
+    text-align: center;
+    padding: 8px;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .levels-challenges-container {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .levels-challenges-title {
+        font-size: 40px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .levels-challenges-subtitle {
+        font-size: 28px;
+        margin-bottom: 24px;
+
+        margin-left: 348px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .levels-challenges-image {
+        width: 230px;
+        position: absolute;
+        top: 190px;
+        left: 254px;
+    }
+
+    .levels-challenges-list-1,
+    .levels-challenges-list-2 {
+        margin-left: 433px;
+        margin-bottom: 8px;
+    }
+
+    .levels-challenges-list-1 li:nth-of-type(2) {
+        margin-left: 21px;
+    }
+
+    .levels-challenges-list-2 li:nth-of-type(1) {
+        margin-left: 21px;
+    }
+
+    .levels-challenges-text {
+        font-size: 18px;
+        margin-left: 356px;
+        text-align: start;
+    }
+
+    .levels-challenges-container-list-image {
+        margin-bottom: 22px;
+    }
+
+}
