@@ -43,3 +43,9 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+@media screen and (min-width: 1200px) {
+  html {
+    scroll-padding-top: 118px;
+  }
+}
