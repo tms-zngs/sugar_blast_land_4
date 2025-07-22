@@ -1,0 +1,141 @@
+.candy-combos {
+  background-color: var(--pink-section-bg);
+  margin-bottom: 16px;
+}
+.container {
+}
+.candy-combos-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.candy-combos-texts-wrap {
+}
+.candy-combos-title {
+  font-family: var(--font-agbalumo);
+  font-weight: var(--weight-regular);
+  font-size: 28px;
+  color: var(--color-dark);
+  padding: 3.5px 0 3.5px 0;
+  margin-bottom: 16px;
+}
+.candy-combos-subtitle {
+  padding-right: 40px;
+  font-family: var(--roboto-regular);
+  font-weight: var(--weight-regular);
+  font-size: 20px;
+  line-height: 1.17;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+.candy-combos-subtitle-2 {
+  font-family: var(--roboto-regular);
+  font-weight: var(--weight-regular);
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-dark);
+  margin-bottom: 16px;
+}
+.candy-combos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.candy-combos-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.cannon-icon,
+.flowerry-icon {
+  width: 46px;
+  height: 48px;
+}
+.combos-item-text {
+  font-family: var(--roboto-regular);
+  font-weight: var(--weight-regular);
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-dark);
+  padding: 4px 0 4px 0;
+}
+.dynamite-icon,
+.rainbow-icon {
+  width: 44px;
+  height: 48px;
+}
+.candy-combos-fact-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.candy-combos-fact {
+  font-family: var(--roboto-regular);
+  font-weight: var(--weight-regular);
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-dark);
+}
+.candy-combos-fact-fireworks {
+  width: 20px;
+  height: 24px;
+}
+.candy-combos-picture {
+}
+.candy-combos-image {
+}
+
+@media screen and (min-width: 1200px) {
+  .candy-combos-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 54px;
+  }
+
+  .candy-combos-title {
+    padding: 0;
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+
+  .candy-combos-subtitle {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .candy-combos-subtitle-2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .candy-combos-list {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .candy-combos-item {
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .combos-item-text {
+    font-size: 18px;
+  }
+
+  .candy-combos-fact-wrap {
+    justify-content: flex-start;
+  }
+
+  .candy-combos-fact {
+    font-size: 18px;
+    justify-content: flex-start;
+  }
+}
