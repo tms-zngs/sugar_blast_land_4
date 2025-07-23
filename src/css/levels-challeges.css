@@ -15,7 +15,6 @@
     color: var(--dark);
     margin-bottom: 16px;
     text-align: start;
-    color: var(--dark);
 }
 
 .levels-challenges-subtitle {
@@ -61,6 +60,7 @@
     color: var(--dark);
     text-align: center;
     padding: 8px;
+    line-height: 1.17;
 }
 
 
