@@ -2,13 +2,9 @@
   background-color: var(--pink-section-bg);
   margin-bottom: 16px;
 }
-.container {
-}
 .candy-combos-container {
   padding-top: 16px;
   padding-bottom: 16px;
-}
-.candy-combos-texts-wrap {
 }
 .candy-combos-title {
   font-family: var(--font-agbalumo);
@@ -84,10 +80,6 @@
 .candy-combos-fact-fireworks {
   width: 20px;
   height: 24px;
-}
-.candy-combos-picture {
-}
-.candy-combos-image {
 }
 
 @media screen and (min-width: 1200px) {
