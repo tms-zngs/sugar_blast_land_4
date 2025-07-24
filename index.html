@@ -40,7 +40,7 @@
     <script type="module" crossorigin src="/sugar_blast_land_4/index.js"></script>
     <link rel="modulepreload" crossorigin href="/sugar_blast_land_4/assets/vendor-Cv6zFof9.js">
     <link rel="stylesheet" crossorigin href="/sugar_blast_land_4/assets/vendor-BZ_WhpHG.css">
-    <link rel="stylesheet" crossorigin href="/sugar_blast_land_4/assets/styles-5798b6JR.css">
+    <link rel="stylesheet" crossorigin href="/sugar_blast_land_4/assets/styles-CJUPQZTG.css">
   </head>
   <body>
     <header class="header">
@@ -52,10 +52,22 @@
       class="mobile-header-flower"
     />
     <button type="button" class="header-burger-button" data-action="toggle">
-      <svg width="40" height="40" class="header-btn menu" data-icon="open">
+      <svg
+        width="40"
+        height="40"
+        class="header-btn menu"
+        data-icon="open"
+        data-visible="true"
+      >
         <use href="/sugar_blast_land_4/assets/sprite-oJ3Si2l9.svg#icon-burger"></use>
       </svg>
-      <svg width="40" height="40" class="header-btn close-x" data-icon="close">
+      <svg
+        width="40"
+        height="40"
+        class="header-btn close-x"
+        data-icon="close"
+        data-visible="false"
+      >
         <use href="/sugar_blast_land_4/assets/sprite-oJ3Si2l9.svg#icon-menu-close-btn"></use>
       </svg>
     </button>
@@ -69,41 +81,49 @@
         />
         <ul class="desktop-nav-list">
           <li class="nav-item">
-            <a href="#hero" class="nav-link">Home</a>
+            <a href="#hero" class="nav-link" data-link>Home</a>
           </li>
           <li class="nav-item">
-            <a href="#about-game" class="nav-link">About the Game</a>
+            <a href="#about-game" class="nav-link" data-link>About the Game</a>
           </li>
           <li class="nav-item">
-            <a href="#how-to-play" class="nav-link">How to Play</a>
+            <a href="#how-to-play" class="nav-link" data-link>How to Play</a>
           </li>
           <li class="nav-item">
-            <a href="#candy-combos" class="nav-link">Candy Combos</a>
+            <a href="#candy-combos" class="nav-link" data-link>Candy Combos</a>
           </li>
           <li class="nav-item">
-            <a href="#special-boosters" class="nav-link">Special Boosters</a>
+            <a href="#special-boosters" class="nav-link" data-link
+              >Special Boosters</a
+            >
           </li>
         </ul>
         <ul class="desktop-nav-list">
           <li class="nav-item">
-            <a href="#sweet-features" class="nav-link">Sweet Features</a>
+            <a href="#sweet-features" class="nav-link" data-link
+              >Sweet Features</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#visual-sound" class="nav-link">Visuals & Sound</a>
+            <a href="#visual-sound" class="nav-link" data-link
+              >Visuals & Sound</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#levels-challenges" class="nav-link"
+            <a href="#levels-challenges" class="nav-link" data-link
               >Levels & Challenges</a
             >
           </li>
           <li class="nav-item">
-            <a href="#mobile-experience" class="nav-link">Mobile Experience</a>
+            <a href="#mobile-experience" class="nav-link" data-link
+              >Mobile Experience</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#download-now" class="nav-link">Download</a>
+            <a href="#download-now" class="nav-link" data-link>Download</a>
           </li>
           <li class="nav-item">
-            <a href="#contact-support" class="nav-link">Contact</a>
+            <a href="#contact-support" class="nav-link" data-link>Contact</a>
           </li>
         </ul>
       </nav>
@@ -111,8 +131,8 @@
   </div>
 </header>
 
-<div class="modal-overlay" data-overlay>
-  <nav class="burger-menu" data-menu data-visible="close" aria-hidden="true">
+<div class="modal-overlay" data-overlay data-active="false">
+  <nav class="burger-menu" data-menu>
     <ul class="mobile-nav">
       <li class="nav-item">
         <a href="#hero" class="nav-link" data-link>Home</a>
@@ -1071,16 +1091,16 @@
       © 2025 sugarbounceblitz.com - All rights reserved.
     </p>
     <nav class="footer-nav">
-      <a class="footer-link" href="/privacy-policy.html">Privacy Policy</a>
-      <a class="footer-link" href="/terms-and-conditions.html"
+      <a class="footer-link" href="./privacy-policy.html">Privacy Policy</a>
+      <a class="footer-link" href="./terms-and-conditions.html"
         >Terms of Service</a
       >
-      <a class="footer-link" href="/cookies-policy.html">Cookies Policy</a>
+      <a class="footer-link" href="./cookies-policy.html">Cookies Policy</a>
     </nav>
   </div>
 </footer>
 
-    <div data-cookies-modal class="cookies-modal">
+    <div data-cookies-modal class="cookies-modal" data-state="disabled">
   <div data-overlay class="cookies-modal__overlay"></div>
   <div data-content class="cookies-modal__content">
     <div data-title-container class="cookies-policy-banner-title-container">
