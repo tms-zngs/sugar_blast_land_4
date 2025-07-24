@@ -48,9 +48,9 @@ export default defineConfig(({ command }) => {
       }),
       ViteImageOptimizer({
         exclude: /^sprite.svg$/,
-        png: {
-          quality: 90,
-        },
+        // png: {
+        //   quality: 90,
+        // },
         jpeg: {
           quality: 60,
         },
