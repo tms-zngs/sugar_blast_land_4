@@ -6,6 +6,12 @@
 .special-boosters-container {
   padding-top: 16px;
   padding-bottom: 16px;
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
 }
 
 .special-boosters-title {
@@ -170,6 +176,7 @@
 
   .swiper-button-prev,
   .swiper-button-next {
+    display: block;
     position: absolute;
     top: 62% !important;
     transform: translateY(-50%);
