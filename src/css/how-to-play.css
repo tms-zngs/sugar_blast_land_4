@@ -2,14 +2,12 @@
   background-color: var(--pink-section-bg);
   margin-bottom: 16px;
 }
-.container {
-}
+
 .how-to-play-container {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.how-to-title-and-text-wrap {
-}
+
 .how-to-play-title {
   font-family: var(--font-agbalumo);
   color: var(--color-dark);
@@ -56,8 +54,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
-}
-.how-to-images-and-fact-wrap {
 }
 
 .how-to-play-image {

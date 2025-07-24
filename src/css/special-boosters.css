@@ -68,7 +68,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 234px;
+  height: auto;
+  min-height: 234px;
   background: transparent;
   padding: 8px;
 }
@@ -124,7 +125,6 @@
 
   .swiper {
     width: 962px;
-    /* 342 + 288*2  */
     margin: 0 auto;
     min-height: 342px;
     margin-bottom: 16px;
@@ -140,7 +140,6 @@
     justify-content: center;
     background: transparent;
     padding: 0;
-    /* Не треба transition тут! */
   }
 
   .booster-card {
@@ -156,8 +155,9 @@
     justify-content: center;
     text-align: center;
     padding: 24px 0;
-    transition: box-shadow 0.3s, background 0.3s, transform 0.3s;
-    /* Зміни тільки scale! */
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-сolor 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .swiper-slide-active .booster-card {
@@ -165,7 +165,6 @@
     box-shadow: 0 0 8px 2px #ffa8d2;
     z-index: 2;
     transform: scale(1.187);
-    /* 342/288 ≈ 1.187 */
     padding: 9px;
   }
 
