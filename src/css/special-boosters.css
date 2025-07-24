@@ -110,6 +110,19 @@
         padding-bottom: 48px;
     }
 
+    .swiper {
+        width: 962px;
+        /* 342 + 288*2  */
+        margin: 0 auto;
+        min-height: 342px;
+        margin-bottom: 16px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center !important;
+       
+        
+    }
+
     .special-boosters-title {
         font-size: 40px;
         margin-bottom: 32px;
@@ -127,60 +140,70 @@
         text-align: center;
     }
 
-    .swiper-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: none;
-        background: transparent;
-    }
+                        
+                .swiper-slide {
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: center;
+                    background: transparent;
+                    padding: 0;
+                    /* Не треба transition тут! */
+                }
+        
+                .booster-card {
+                    width: 288px;
+                    height: 258px;
+                    background: #fff;
+                    border-radius: 16px;
+                    box-shadow: none;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 24px 0;
+                    transition: box-shadow 0.3s, background 0.3s, transform 0.3s;
+                    /* Зміни тільки scale! */
+                }
+        
+                .swiper-slide-active .booster-card {
+                    background: transparent;
+                    box-shadow: 0 0 8px 2px #ffa8d2;
+                    z-index: 2;
+                    transform: scale(1.187);
+                    /* 342/288 ≈ 1.187 */
+                    padding: 9px;
+                }
 
-    .booster-card {
-        width: 288px;
-        height: 258px;
-        background: #fff;
-        border-radius: 16px;
-        box-shadow: none;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 24px 0;
-        transition: all 0.3s;
-    }
 
-    .swiper-slide-active .booster-card {
-        padding: 8px;
-        width: 342px;
-        height: 306px;
-        background: transparent;
-        box-shadow: 0 0 8px 2px #ffa8d2;
-        z-index: 2;
-        transform-origin: center center;
-    }
 
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        top: 50%;
-        transform: translateY(-50%);
-        width: 17px;
-        height: 30px;
-        background: transparent;
-        border-radius: 50%;
-        border: none;
-        z-index: 10;
-        color: #111;
-    }
+.special-boosters-container {
+    position: relative;
+    overflow: visible;
+}
 
-    .swiper-button-prev {
-        left: 0px;
-        right: auto;
-    }
+.swiper {
+    width: 962px;
+    min-height: 342px;
+    margin: 0 auto 16px auto;
+}
 
-    .swiper-button-next {
-        right: 0px;
-        left: auto;
-    }
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 62% !important;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.swiper-button-prev {
+    left: -30px;
+    color: var(--dark) !important;
+}
+
+.swiper-button-next {
+    right: -30px;
+    color: var(--dark) !important;
+}
 }
