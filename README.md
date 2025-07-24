@@ -7,7 +7,7 @@ adventure as sweet as it gets 🍭
 ## Special thanks to everyone who made this project come to life 🍭
 
 - 🎨 **Style**: Candy-themed, colorful, and playful
-- 🎨 **UX/UI Designer**: [Sofiia Kravets](#)
+- 🎨 **UX/UI Designer**: **Sofiia Kravets**
 
 ## 💻 Development Team
 
