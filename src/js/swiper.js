@@ -1,3 +1,6 @@
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
+
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
@@ -8,25 +11,25 @@ const swiper = new Swiper('.swiper', {
     pagination: false,
   },
   navigation: {
-    enabled: false, 
+    enabled: false,
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   scrollbar: {
-    enabled: true, 
+    enabled: true,
     el: '.swiper-scrollbar',
   },
   breakpoints: {
     1200: {
       navigation: {
-        enabled: true, 
+        enabled: true,
       },
       scrollbar: {
-        enabled: false, 
+        enabled: false,
       },
       slidesPerView: 3,
       spaceBetween: 0,
       centeredSlides: true,
-    }
-  }
+    },
+  },
 });
