@@ -4,18 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!modal) return;
 
   if (localStorage.getItem(STORAGE_KEY) === 'true') {
-    modal.classList.add('disable');
+    modal.setAttribute('data-state', 'disabled');
     return;
   }
 
-  modal.classList.add('is-open');
+  modal.setAttribute('data-state', 'open');
 
   modal.addEventListener('click', event => {
     const btn = event.target.closest('[data-dismiss]');
     if (!btn) return;
 
-    modal.classList.remove('is-open');
-    modal.classList.add('disable');
+    modal.setAttribute('data-state', 'disabled');
     localStorage.setItem(STORAGE_KEY, 'true');
   });
 });
