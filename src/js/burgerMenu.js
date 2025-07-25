@@ -8,12 +8,12 @@ toggleBtn.addEventListener('click', () => {
 
   if (isActive) {
     modalOverlay.setAttribute('data-active', 'false');
-    openIcon.setAttribute('data-visible', 'true');
+    openIcon.setAttribute('data-hidden', 'false');
     closeIcon.setAttribute('data-visible', 'false');
     document.body.classList.remove('no-scroll');
   } else {
     modalOverlay.setAttribute('data-active', 'true');
-    openIcon.setAttribute('data-visible', 'false');
+    openIcon.setAttribute('data-hidden', 'true');
     closeIcon.setAttribute('data-visible', 'true');
     document.body.classList.add('no-scroll');
   }
@@ -24,7 +24,7 @@ document.querySelectorAll('[data-link]').forEach(link => {
     e.preventDefault();
 
     modalOverlay.setAttribute('data-active', 'false');
-    openIcon.setAttribute('data-visible', 'true');
+    openIcon.setAttribute('data-hidden', 'false');
     closeIcon.setAttribute('data-visible', 'false');
     document.body.classList.remove('no-scroll');
 
