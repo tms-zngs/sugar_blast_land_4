@@ -11,7 +11,7 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  display: none;
+  display: none !important;
 }
 
 .special-boosters-title {
