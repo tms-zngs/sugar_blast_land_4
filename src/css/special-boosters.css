@@ -176,7 +176,7 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    display: block;
+    display: block!important;
     position: absolute;
     top: 62% !important;
     transform: translateY(-50%);
